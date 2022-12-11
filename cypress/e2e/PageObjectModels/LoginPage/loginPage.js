@@ -21,7 +21,14 @@ class LoginPage {
   get signOutButton() {
     return cy.get("#top-sign-out");
   }
-
+  get invalidEmailText() {
+    return cy.get(
+      "#auth0-lock-error-msg-email > .auth0-lock-error-invalid-hint"
+    );
+  }
+  get duplicateEmailErrorMessage() {
+    return cy.get(".animated > span");
+  }
   generateRandomEmail() {
     return (
       Math.random().toString(36).substring(2, 11) +
