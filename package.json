@@ -11,7 +11,8 @@
     "cartTest":  "cypress run --spec cypress/e2e/Assignment/3Cart/cart.cy.js",
     "productGallaryTest": "cypress run --spec cypress/e2e/Assignment/4productGallaryHomePage/productGallaryTest.cy.js",
     "productDetailsTest": "cypress run --spec  cypress/e2e/Assignment/5productDetails/productDetails.cy.js",
-    "checkOutTest": "cypress run  --spec    cypress/e2e/Assignment/6checkout/checkOut.cy.js"
+    "checkOutTest": "cypress run  --spec    cypress/e2e/Assignment/6checkout/checkOut.cy.js",
+    "filterAndSortTest" : "cypress run --spec cypress/e2e/Assignment/7filterAndSort/filterAndSortTest.cy.js"
 
 
   },
