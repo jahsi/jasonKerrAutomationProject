@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "runAllTest": " npx cypress run --browser chrome",
-    "authentication": "cypress run --spec cypress/e2e/Assignment/1authentication/authentication.cy.js"
+    "authentication": "cypress run --spec cypress/e2e/Assignment/1authentication/authentication.cy.js",
+    "addToCart": "cypress run --spec cypress/e2e/Assignment/2addToCart/addToCart.cy.js"
 
   },
   "repository": {
