@@ -9,6 +9,10 @@ class ProductGrid {
     return cy.get(`div>span.css-1ccau2i`);
   }
 
+  get deleteItemButton() {
+    return cy.get(`button[title="Remove item"]`);
+  }
+
   get cardList() {
     return cy.get(`div.css-uaqjf`);
   }
@@ -31,6 +35,18 @@ class ProductGrid {
   }
   get containerForItems() {
     return cy.get(`.snipcart-item-line__container`);
+  }
+  get priceTotalForInteger() {
+    return cy.get(
+      `div>div[class="snipcart-item-quantity__total-price snipcart__font--bold snipcart__font--secondary"]`
+    );
+  }
+
+  get incrementQuantity() {
+    return cy.get(`button[title="Increment quantity"]`);
+  }
+  get grandtotal() {
+    return cy.get(".snipcart-summary-fees__amount");
   }
   addAllitems() {
     let totalitems = parseInt(this.listOfAddToCartItem.length);
