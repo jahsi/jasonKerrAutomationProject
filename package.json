@@ -1,0 +1,23 @@
+{
+  "name": "cypress_automation_project_refactored",
+  "version": "1.0.0",
+  "description": "This is the repo for Quality Automation Project\r ----\r Instructions\r 1. Explore `https://ui-automation-camp.vercel.app` and note the main sections of\r the application\r a. Make a list of tests that you want to automate [15 points]\r i. Full test cases with steps not needed - perhaps just test title\r ii. At least 5 scenarios for each section listed at [4] below\r b. Share rationale for selecting those tests [10 points]\r 2. Create a repo to store the code that you will be creating for this project\r 3. Select WebdriverIO or Cypress as the test automation framework for the project\r 4. Create branches for each section of the application that will be automated. Each\r section below is 60 points with another 25 points allocated for git and repository\r handling [565 points]\r a. `authentication`\r b. `add-to-cart`\r c. `cart`\r d. `product-gallery-home-page`\r e. `product-details`\r f. `checkout`\r g. `filter-and-sort`\r h. `search`\r i. `contact`\r 5. All branches should be merged to the main branch using a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahsi/jasonKerrAutomationProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahsi/jasonKerrAutomationProject/issues"
+  },
+  "homepage": "https://github.com/jahsi/jasonKerrAutomationProject#readme",
+  "devDependencies": {
+    "cypress": "^12.0.2"
+  }
+}
