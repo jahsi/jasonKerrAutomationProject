@@ -8,7 +8,7 @@ describe("LoginPage", () => {
     cy.wait(3000);
   });
 
-  it.skip("should be able to create a new user and navigate to products page", () => {
+  it("should be able to create a new user and navigate to products page", () => {
     cy.wait(2000);
     let email = LoginPage.generateRandomEmail();
     // let password = '';
