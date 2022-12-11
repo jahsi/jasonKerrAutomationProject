@@ -5,4 +5,5 @@ module.exports = {
   },
   weak_password: "123",
   wrong_email: "lol",
+  strong_password: "123W@tester",
 };

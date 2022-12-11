@@ -65,7 +65,7 @@ class CheckoutFields {
     this.country.type(value.country, { force: true });
     // this.country.type("{downarrow}");
     // this.country.type("{downarrow}").click();
-    this.province.type(value.province);
+    this.province.type(value.province, { force: true });
     this.postalCode.type(value.postalCode);
   }
 }
