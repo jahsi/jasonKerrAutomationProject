@@ -13,7 +13,8 @@
     "productDetailsTest": "cypress run --spec  cypress/e2e/Assignment/5productDetails/productDetails.cy.js",
     "checkOutTest": "cypress run  --spec    cypress/e2e/Assignment/6checkout/checkOut.cy.js",
     "filterAndSortTest" : "cypress run --spec cypress/e2e/Assignment/7filterAndSort/filterAndSortTest.cy.js",
-    "searchTest" : "cypress run --spec cypress/e2e/Assignment/8Search/search.cy.js"
+    "searchTest" : "cypress run --spec cypress/e2e/Assignment/8Search/search.cy.js",
+    "contactTest" : "cypress run --spec cypress/e2e/Assignment/9Contact/contact.cy.js"
 
 
   },
