@@ -9,7 +9,8 @@
     "authentication": "cypress run --spec cypress/e2e/Assignment/1authentication/authentication.cy.js",
     "addToCart": "cypress run --spec cypress/e2e/Assignment/2addToCart/addToCart.cy.js",
     "cartTest":  "cypress run --spec cypress/e2e/Assignment/3Cart/cart.cy.js",
-    "productGallaryTest": "cypress run --spec cypress/e2e/Assignment/4productGallaryHomePage/productGallaryTest.cy.js"
+    "productGallaryTest": "cypress run --spec cypress/e2e/Assignment/4productGallaryHomePage/productGallaryTest.cy.js",
+    "productDetailsTest": "cypress run --spec  cypress/e2e/Assignment/5productDetails/productDetails.cy.js"
 
 
   },
