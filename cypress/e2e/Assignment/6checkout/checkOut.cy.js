@@ -14,6 +14,8 @@ describe("Checkout test", () => {
     // console.log("Log me out Scotty");
   });
 
+  //FIXME This works with dashboard but fails when ruan headless
+
   // FilterHeader.selectValue("lowToHigh");
   it("CheckOut with one item ", () => {
     cy.wait(2000);
@@ -24,7 +26,7 @@ describe("Checkout test", () => {
     cy.wait(2000);
     CheckOutPage.fillValue(checkOutData.coorect_info);
 
-    cy.wait(1500);
+    cy.wait(2000);
     CheckOutPage.submitButton.click();
     cy.wait(2000);
     CheckOutPage.placeOrderButton.click();
@@ -40,9 +42,9 @@ describe("Checkout test", () => {
     cy.wait(1000);
     CheckOutPage.fillValue(checkOutData.wrong_info);
 
-    cy.wait(1000);
+    cy.wait(1500);
     CheckOutPage.submitButton.click();
-    cy.wait(1000);
+    cy.wait(1500);
     CheckOutPage.invalidText.contains("valid email address");
   });
 
