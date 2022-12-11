@@ -45,3 +45,4 @@ contents as well as the account verification email when registering [50 points]
 2. Add in data-driven automation in your authentication, checkout and contact form
 [50 points]
 ----
+##TODO add intructions and allure
