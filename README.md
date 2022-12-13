@@ -72,7 +72,8 @@ To run tests, run the following command
 
 
 
-## Documentation
+## Notes
+###  Cypress MOCHAWESOME was used so it will auto generate the reports 
 
-[Documentation](https://linktodocumentation)
+
 
