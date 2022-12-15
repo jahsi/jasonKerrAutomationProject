@@ -43,9 +43,26 @@ class CheckoutFields {
     return cy.get(".snipcart__box > :nth-child(2) > :nth-child(2)");
   }
 
+  get creditCardCardField() {
+    return cy.iframe(".snipcart-payment-card-form iframe").find("#card-number");
+  }
+
+  get creditCardExpiryField() {
+    return cy.iframe(".snipcart-payment-card-form iframe").find("#expiry-date");
+  }
+
+  get creditCardCVField() {
+    return cy.iframe(".snipcart-payment-card-form iframe").find("#cvv");
+  }
+  fillCreditCardDetails(value) {
+    this.creditCardCardField.type(value.creditCardNumber);
+    this.creditCardExpiryField.type(value.expiryDate);
+    this.creditCardCVField.type(value.cvv);
+  }
+
   fillValue(value) {
     this.name.type(value.name);
-    this.email.type(value.email);
+    this.email.type(value.email, { force: true });
     this.streetAddress.type(value.streetAddress, { force: true });
     this.appSuite.type(value.appSuite);
     this.city.type(value.city);

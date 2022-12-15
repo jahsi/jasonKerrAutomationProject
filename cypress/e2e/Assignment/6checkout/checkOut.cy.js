@@ -28,7 +28,9 @@ describe("Checkout test", () => {
 
     cy.wait(2000);
     CheckOutPage.submitButton.click();
-    cy.wait(2000);
+    cy.wait(3000);
+    // CheckOutPage.creditCardCardField.type(checkOutData.correct_credit_cart);
+    CheckOutPage.fillCreditCardDetails(checkOutData.validCreditCard);
     CheckOutPage.placeOrderButton.click();
     cy.wait(2000);
     CheckOutPage.thankYouH1.contains("Thank");
