@@ -45,7 +45,7 @@ describe("Checkout test", () => {
     cy.wait(1500);
     CheckOutPage.submitButton.click();
     cy.wait(1500);
-    CheckOutPage.invalidText.contains("valid email address");
+    CheckOutPage.invalidText.contains(checkOutData.invalid_email);
   });
 
   ///Wanted to use and invalid credit cart but it works   😢😕

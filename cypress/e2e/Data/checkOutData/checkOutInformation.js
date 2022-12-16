@@ -1,4 +1,5 @@
 module.exports = {
+  invalid_email: "Please provide a valid email address",
   coorect_info: {
     name: "lol",
     email: "lol@example.com",
