@@ -33,6 +33,9 @@ class LoginPage {
   get duplicateEmailErrorMessage() {
     return cy.get(".animated > span");
   }
+  get weakPasswordErrorMessage() {
+    return cy.get(".auth0-lock-error-invalid-hint");
+  }
   generateRandomEmail() {
     return (
       Math.random().toString(36).substring(2, 11) +
