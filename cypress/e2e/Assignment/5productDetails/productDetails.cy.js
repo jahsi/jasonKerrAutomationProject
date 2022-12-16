@@ -12,8 +12,7 @@ describe("Product Details Test Test", () => {
     // console.log("Log me out Scotty");
   });
 
-  // FilterHeader.selectValue("lowToHigh");
-  it("Veriffy that back to button works ", () => {
+  it("Veriffy that back to button works and the url is there ", () => {
     cy.wait(3000);
     ProductGrid.imageOFProductList.eq(5).click();
     cy.wait(2000);
@@ -23,8 +22,8 @@ describe("Product Details Test Test", () => {
   });
 
   it("Verify that related items are there", () => {
-    // cy.wait(2000);
     cy.wait(3000);
+    // This is a shirt item so only shirts should be present_
     ProductGrid.imageOFProductList.eq(5).click();
     cy.wait(2000);
     ProductDetails.relatedItemsParagraph.each(($elem) => {

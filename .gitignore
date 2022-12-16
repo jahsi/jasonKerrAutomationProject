@@ -4,3 +4,4 @@ cypress/videos/
 cypress/screenshots/**
 cypress/screenshots/
 node_modules/**
+cypress/reports/**

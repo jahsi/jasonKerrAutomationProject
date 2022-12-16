@@ -1,3 +1,4 @@
+const loginData = require("../../Data/siteData/generalData");
 class LoginPage {
   get signOrRegisterButton() {
     return cy.get('button[id="signInOrRegister"]');
@@ -9,6 +10,9 @@ class LoginPage {
 
   get passwordTextField() {
     return cy.get('input[type="password"]');
+  }
+  get emailType() {
+    return cy.get('input[type="email"]');
   }
 
   get submitField() {
@@ -51,7 +55,7 @@ class LoginPage {
   ///REVIEW  This was created by
   //
   login() {
-    cy.visit("https://ui-automation-camp.vercel.app/");
+    cy.visit(loginData.domain);
     cy.get("#signInOrRegister").click();
     //Login on to site.
     cy.origin(
