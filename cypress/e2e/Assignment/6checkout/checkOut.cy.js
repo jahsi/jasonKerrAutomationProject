@@ -28,7 +28,9 @@ describe("Checkout test", () => {
 
     cy.wait(2000);
     CheckOutPage.submitButton.click();
-    cy.wait(2000);
+    cy.wait(3000);
+    // CheckOutPage.creditCardCardField.type(checkOutData.correct_credit_cart);
+    CheckOutPage.fillCreditCardDetails(checkOutData.validCreditCard);
     CheckOutPage.placeOrderButton.click();
     cy.wait(2000);
     CheckOutPage.thankYouH1.contains("Thank");
@@ -52,15 +54,20 @@ describe("Checkout test", () => {
   it.skip("Verify that one needs valid credit Card", () => {
     cy.wait(2000);
     ProductGrid.listOfAddToCartItem.eq(0).click();
-
+    cy.wait(2000);
+    //  CartPage.backToCart.click();
     CartPage.checkOut.click();
-    cy.wait(1000);
+    cy.wait(2000);
     CheckOutPage.fillValue(checkOutData.coorect_info);
 
-    cy.wait(1000);
+    cy.wait(2000);
     CheckOutPage.submitButton.click();
-    cy.wait(1000);
-    CheckOutPage.invalidText.contains("valid email address");
+    cy.wait(3000);
+    // CheckOutPage.creditCardCardField.type(checkOutData.correct_credit_cart);
+    CheckOutPage.fillCreditCardDetails(checkOutData.validCreditCard);
+    CheckOutPage.placeOrderButton.click();
+    cy.wait(2000);
+    CheckOutPage.thankYouH1.contains("Thank");
   });
 
   //TODO The checkout card does not apperar to be working

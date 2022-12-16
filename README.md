@@ -17,6 +17,11 @@
 
 To run tests, run the following command
 
+ **RUN ALL TEST**
+```bash
+  npm runAllTest 
+```
+
 **Authentication**
 ```bash
   npm run authentication
@@ -73,7 +78,7 @@ To run tests, run the following command
 
 
 ## Notes
-###  Cypress MOCHAWESOME was used so it will auto generate the reports 
+###  Cypress MOCHAWESOME was used so it will auto generate the reports If you npn 
 
 
 

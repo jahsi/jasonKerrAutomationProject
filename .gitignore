@@ -3,3 +3,6 @@ cypress/videos/**
 cypress/videos/
 cypress/screenshots/**
 cypress/screenshots/
+node_modules/**
+cypress/reports/**
+cypress/reports/**
