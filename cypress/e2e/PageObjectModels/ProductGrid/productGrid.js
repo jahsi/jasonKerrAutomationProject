@@ -61,7 +61,32 @@ class ProductGrid {
       this.backToCart.click();
     }
   }
-  /////
+
+  addAllItemsToFavourtie() {
+    // let favourties = parseInt(this.addItemToFavouriteIcon.length);
+
+    for (let i = 21; i >= 0; i--) {
+      cy.wait(200);
+      console.log("I am I" + i);
+      cy.wait(200);
+      this.addItemToFavouriteIcon.eq(0).click();
+    }
+  }
+
+  get removeFavourtieIcon() {
+    return cy.get("#remove-from-favorite");
+  }
+  get addItemToFavouriteIcon() {
+    return cy.get("#add-to-favorite");
+  }
+
+  get successAddItemsTOFavourtie() {
+    return cy.get("#toast-1-title");
+  }
+
+  get removeFromFavouite() {
+    return cy.get("#toast-2-title");
+  }
 }
 
 module.exports = new ProductGrid();
