@@ -17,6 +17,12 @@
 
 To run tests, run the following command
 
+
+**favorite**
+```
+  npm run favoriteTest
+```
+
  **RUN ALL TEST**
 ```bash
   npm  run runAllTest 

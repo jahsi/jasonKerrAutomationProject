@@ -16,7 +16,9 @@
     "searchTest": "cypress run --spec cypress/e2e/Assignment/8Search/search.cy.js",
     "contactTest": "cypress run --spec cypress/e2e/Assignment/9Contact/contact.cy.js",
     "authEmailTest": "cypress run --spec cypress/e2e/Assignment/EmailTests/authenticationTest.cy.js",
-    "cartTestEmail": "cypress run --spec cypress/e2e/Assignment/EmailTests/validateCheckOut.cy.js"
+    "cartTestEmail": "cypress run --spec cypress/e2e/Assignment/EmailTests/validateCheckOut.cy.js",
+    "favoriteTest":"cypress run --spec  cypress/e2e/Assignment/Favourites/favourites.cy.js"
+   
   },
   "repository": {
     "type": "git",

@@ -13,7 +13,7 @@ describe("Favorites  test", () => {
     cy.wait(3000);
   });
 
-  it.skip("An item can be successfully added to the cart by message", () => {
+  it("An item can be successfully added to the cart by message", () => {
     cy.wait(2000);
     ProductGrid.addItemToFavouriteIcon.eq(0).click();
     cy.wait(2000);
@@ -23,7 +23,7 @@ describe("Favorites  test", () => {
     //  CartPage.backToCart.click();
   });
 
-  it.skip("An item can be successfully removed from the favourites by messages", () => {
+  it("An item can be successfully removed from the favourites by messages", () => {
     cy.wait(2000);
     ProductGrid.addItemToFavouriteIcon.eq(0).click();
     cy.wait(1000);
@@ -31,7 +31,7 @@ describe("Favorites  test", () => {
     ProductGrid.removeFromFavouite.contains(favorutieData.removed_message);
   });
 
-  it.skip("The favourtie button works", () => {
+  it("The favourtie button works", () => {
     cy.wait(2000);
     ProductGrid.addItemToFavouriteIcon.eq(0).click();
     cy.wait(1000);
@@ -40,7 +40,7 @@ describe("Favorites  test", () => {
     cy.url().should("include", "favorites");
   });
 
-  it.skip("The remove favorites button should work on favorites pages", () => {
+  it("The remove favorites button should work on favorites pages", () => {
     cy.wait(1000);
     ProductGrid.addItemToFavouriteIcon.eq(0).click();
     cy.wait(1000);
@@ -49,7 +49,7 @@ describe("Favorites  test", () => {
     ProductGrid.removeFromFavouite.contains(favorutieData.removed_message);
   });
 
-  it.skip("The add all items to favourtie", () => {
+  it("The add all items to favourtie", () => {
     cy.wait(1000);
     HeaderOfPage.favoriteText.contains("0");
 
