@@ -52,6 +52,7 @@ describe("Contact Test data driven", () => {
       if (contactIfno.allGood) {
         ContactPage.successMessage.contains("Message Sent");
       }
+      ///Could be a case
 
       // cy.reload()
     });

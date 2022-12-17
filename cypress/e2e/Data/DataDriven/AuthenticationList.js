@@ -1,16 +1,26 @@
 module.exports = {
+  weak_password: "Password is invalid",
   credentials: [
     {
       duplicate: true,
       password: "P@ssword!@",
       email: "test1@tester.com",
       weak_password: false,
+      allGood: false,
     },
     {
       duplicate: false,
-      password: "P@ssword!@",
+      password: "password",
       email: "fblacksell1@jalbum.net",
       weak_password: true,
+      allGood: false,
+    },
+    {
+      duplicate: false,
+      password: "P@ssword1@",
+      email: "fblacksell1@jalbum.net",
+      weak_password: false,
+      allGood: true,
     },
 
     // {
