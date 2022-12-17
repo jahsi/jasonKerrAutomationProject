@@ -6,6 +6,9 @@ class FavoritesPage {
   get addToCartButton() {
     return cy.get("#add-to-cart");
   }
+  get messageNoFavorite() {
+    return cy.get(".chakra-stack > .chakra-heading");
+  }
 }
 
 module.exports = new FavoritesPage();

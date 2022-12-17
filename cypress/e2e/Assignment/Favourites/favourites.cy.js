@@ -69,4 +69,14 @@ describe("Favorites  test", () => {
     ProductGrid.containerForItems.should("have.length", 1);
     HeaderOfPage.topCartButton.contains(num.toString());
   });
+
+  it("Exists button does not exists if removed", () => {
+    cy.wait(2000);
+    ProductGrid.addItemToFavouriteIcon.eq(0).click();
+    cy.wait(1000);
+    ProductGrid.removeFavourtieIcon.eq(0).click();
+    HeaderOfPage.topFavourtieButton.click();
+    FavoritesPage.addToCartButton.should("not.exist");
+    FavoritesPage.messageNoFavorite.contains(favorutieData.no_present);
+  });
 });
