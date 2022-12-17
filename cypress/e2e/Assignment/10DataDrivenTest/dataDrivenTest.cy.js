@@ -28,9 +28,12 @@ describe("Authentication", () => {
         LoginPage.createAccountWithCredentials(email, cred.password);
         cy.wait(1000);
         //IF a user was creayed ot  navigates to product page
-        cy.url().should("include", "product");
+        cy.contains(data.weak_password);
         //Cannot find this element
         // LoginPage.weakPasswordErrorMessage.contains(errorMessage.weak_password);
+      } else if (cred.allGood) {
+        LoginPage.createAccountWithCredentials(email, cred.password);
+        cy.url().should("include", "product");
       }
     });
   }
