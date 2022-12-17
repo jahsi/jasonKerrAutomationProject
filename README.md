@@ -78,7 +78,7 @@ To run tests, run the following command
 
 
 ## Notes
-###  Cypress MOCHAWESOME was used so it will auto generate the reports If you npn 
+###  Cypress MOCHAWESOME was used so it will auto generate the reports If you npm
 
 
 
