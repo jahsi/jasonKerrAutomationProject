@@ -6,3 +6,5 @@ cypress/screenshots/
 node_modules/**
 cypress/reports/**
 cypress/reports/**
+node_modules/.bin/**
+node_modules/**
