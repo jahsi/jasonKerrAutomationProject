@@ -19,7 +19,7 @@ To run tests, run the following command
 
  **RUN ALL TEST**
 ```bash
-  npm runAllTest 
+  npm  run runAllTest 
 ```
 
 **Authentication**
