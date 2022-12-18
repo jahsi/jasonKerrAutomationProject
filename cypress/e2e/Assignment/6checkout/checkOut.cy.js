@@ -17,7 +17,7 @@ describe("Checkout test", () => {
   //FIXME This works with dashboard but fails when ruan headless
 
   // FilterHeader.selectValue("lowToHigh");
-  it.skip("CheckOut with one item ", () => {
+  it("CheckOut with one item ", () => {
     cy.wait(2000);
     ProductGrid.listOfAddToCartItem.eq(0).click();
     cy.wait(2000);
@@ -36,7 +36,7 @@ describe("Checkout test", () => {
     CheckOutPage.thankYouH1.contains("Thank");
   });
 
-  it.skip("Verify that one cannot checkout with invalid fields", () => {
+  it("Verify that one cannot checkout with invalid fields", () => {
     cy.wait(2000);
     ProductGrid.listOfAddToCartItem.eq(0).click();
 
