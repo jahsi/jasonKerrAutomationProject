@@ -50,25 +50,18 @@ describe("Checkout test", () => {
     CheckOutPage.invalidText.contains(checkOutData.invalid_email);
   });
 
-  ///Wanted to use and invalid credit cart but it works   😢😕
-  it.skip("Verify that one needs valid credit Card", () => {
+  it("Verify that cehckout button does not exists with no cart iten", () => {
     cy.wait(2000);
     ProductGrid.listOfAddToCartItem.eq(0).click();
+    CartPage.checkOut.should("exist");
     cy.wait(2000);
     //  CartPage.backToCart.click();
-    CartPage.checkOut.click();
-    cy.wait(2000);
-    CheckOutPage.fillValue(checkOutData.coorect_info);
+    ProductGrid.deleteItemButton.eq(0).click();
 
-    cy.wait(2000);
-    CheckOutPage.submitButton.click();
-    cy.wait(3000);
-    // CheckOutPage.creditCardCardField.type(checkOutData.correct_credit_cart);
+    CartPage.checkOut.should("not.exist");
+
     // CheckOutPage.fillCreditCardDetails(checkOutData.validCreditCard);
     /// Cypress Iframe throws exception
-    CheckOutPage.placeOrderButton.click();
-    cy.wait(2000);
-    CheckOutPage.thankYouH1.contains("Thank");
   });
 
   //TODO The checkout card does not apperar to be working
